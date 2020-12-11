@@ -2,6 +2,7 @@ import React from 'react';
 import Filter from './Filter';
 
 function Title({ title, onFilterChange }) {
+  console.log('[render Title Component]');
   return (
     <header>
       <h2>{title}</h2>
@@ -10,4 +11,4 @@ function Title({ title, onFilterChange }) {
   );
 }
 
-export default Title;
+export default React.memo(Title);

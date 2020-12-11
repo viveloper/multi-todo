@@ -24,6 +24,8 @@ function Todos({
     onFilterChange(id, value);
   };
 
+  console.log('[render Todos Component]');
+
   return (
     <div className="todos">
       <h2>{name}</h2>
@@ -59,4 +61,4 @@ function Todos({
   );
 }
 
-export default Todos;
+export default React.memo(Todos);

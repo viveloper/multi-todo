@@ -4,6 +4,9 @@ function Filter({ value, onChange }) {
   const handleChange = (e) => {
     onChange(e.target.value);
   };
+
+  console.log('[render Filter Component]');
+
   return (
     <select value={value} onChange={handleChange}>
       <option value="all">All</option>
@@ -13,4 +16,4 @@ function Filter({ value, onChange }) {
   );
 }
 
-export default Filter;
+export default React.memo(Filter);

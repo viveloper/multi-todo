@@ -1,8 +1,7 @@
+import { useCallback, useState } from 'react';
 import Title from './components/Title';
 import Todos from './components/Todos';
 import './App.css';
-
-import { useState } from 'react';
 
 const initialState = [
   {
@@ -177,6 +176,8 @@ function App() {
       categories.map((category) => ({ ...category, filterOption: value }))
     );
   };
+
+  console.log('[render App Component]');
 
   return (
     <div className="App">

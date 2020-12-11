@@ -31,6 +31,8 @@ function Todo({
     onRemoveClick(categoryId, todo.id);
   };
 
+  console.log('[render Todo Component]');
+
   return (
     <li className="todo">
       <input
@@ -50,4 +52,4 @@ function Todo({
   );
 }
 
-export default Todo;
+export default React.memo(Todo);
