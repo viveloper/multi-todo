@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
 }
 
 .App-logo {
@@ -35,4 +35,61 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todos {
+  margin: 0 auto;
+  margin-top: 1rem;
+  border: 1px solid #000;
+  border-radius: 8px;
+  max-width: 500px;
+  padding: 1rem;
+}
+
+.todo {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+}
+
+.todo input {
+  flex: 1;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 4px;
+  color: #555;
+}
+
+.todo input.done {
+  text-decoration: line-through;
+}
+
+.todo button {
+  margin-left: 4px;
+  padding: 4px;
+}
+
+.todos-footer {
+  display: flex;
+  justify-content: center;
+}
+
+.todos-footer button {
+  padding: 4px;
+}
+
+header select,
+.todos-footer select {
+  margin-left: 8px;
 }
